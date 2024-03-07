@@ -50,8 +50,8 @@ Variables Description (data read from project data files):
 
 
 Processing variables (created while cleaning the data):
-    merged_train & merged_test -- for binding the datasets listed above
-    merged_dataset -- for the merged test set and train set
-    mean_and_std_dataset -- data set with only measurements on the mean and standard deviation for each measurement
-    tidy_dataset -- for adding a column containing the names of activities and removing the activity ID column
-    final_tidy_dataset -- for creating a new tidy dataset with the avg of each variable for each activity & each subject
+       merged_train & merged_test -- for binding the datasets listed above
+       merged_dataset -- for the merged test set and train set
+       mean_and_std_dataset -- data set with only measurements on the mean and standard deviation for each measurement
+       tidy_dataset -- for adding a column containing the names of activities and removing the activity ID column
+       final_tidy_dataset -- for creating a new tidy dataset with the avg of each variable for each activity & each subject
