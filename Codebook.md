@@ -1,16 +1,11 @@
-run_analysis.R:
-1. Loads the libraries needed.
-2. Sets the folder containing the downloaded data as the working directory.
-3. Reads tables & assigns variables.
-4. Merges the training and test sets to make one data set.
-5. Extracts only the measurements on the mean and standard deviation for each measurement.
-6. Adds descriptive activity names to the data set and removes activity IDs.
-7. Properly labels the data set using descriptive variable names.
-8. Creates a 2nd, separate tidy data set and...
-       b. Gets the average(mean) for each activity & each subject.
-       a. Writes this tidy data set to a .txt file.
 
-tidy_dataset.txt: Contains the tidy data set with the average of each variable for each activity and each subject.
+
+The data used in this project was collected from the accelerometers of the Samsung Galaxy S smartphone. 
+A full description of this data can be found at the link below:
+[Human Activity Recognition Using Smartphones.](https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones)
+
+The data can be downloaded by clicking the link below:
+[https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip]
 
 The dataset includes the following files:
 =========================================
@@ -23,6 +18,13 @@ The dataset includes the following files:
 - 'train/y_train.txt': Training labels.
 - 'test/X_test.txt': Test set.
 - 'test/y_test.txt': Test labels.
+
+For each record it is provided: ====================================== 
+- Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
+- Triaxial Angular velocity from the gyroscope.
+- A 561-feature vector with time and frequency domain variables.
+- Its activity label.
+- An identifier of the subject who carried out the experiment.
 
 
 The following files are available for the train and test data. Their descriptions are equivalent. 
@@ -55,3 +57,18 @@ Processing variables (created while cleaning the data):
        - mean_and_std_dataset -- data set with only measurements on the mean and standard deviation for each measurement
        - tidy_dataset -- for adding a column containing the names of activities and removing the activity ID column
        - final_tidy_dataset -- for creating a new tidy dataset with the avg of each variable for each activity & each subject
+
+
+run_analysis.R:
+1. Loads the libraries needed.
+2. Sets the folder containing the downloaded data as the working directory.
+3. Reads tables & assigns variables.
+4. Merges the training and test sets to make one data set.
+5. Extracts only the measurements on the mean and standard deviation for each measurement.
+6. Adds descriptive activity names to the data set and removes activity IDs.
+7. Properly labels the data set using descriptive variable names.
+8. Creates a 2nd, separate tidy data set and...
+       b. Gets the average(mean) for each activity & each subject.
+       a. Writes this tidy data set to a .txt file.
+
+tidy_dataset.txt: Contains the tidy data set with the average of each variable for each activity and each subject.
